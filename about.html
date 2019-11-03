@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="box.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <style>
+        h1 {
+            display: inline-block;
+            float: left;
+        }
+
+        #leftbox {
+            float: left;
+            width: 40%;
+            height: 280px;
+            font-size: 20px;
+        }
+
+        #rightbox {
+            float: right;
+            width: 60%;
+            height: 280px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 2px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+
+        #left {
+            width: 22%;
+            display: inline-block;
+        }
+
+        .login {
+            border: 1px solid black;
+            display: inline-block;
+            width: 60%;
+        }
+
+        .footer {
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="width: 65%;">About US</h1>
+    <h1 style="width: 35%;">CONTACT US</h1>
+    <div id="leftbox">
+        <p>
+            Ever wondered how convenient it would have been if you could send across priceless treasures to your loved
+            ones
+            from the comforts of your home!
+
+            We are pleased to introduce you to India's leading online courier booking portal which is conceptualized in
+            providing express courier delivery just at the click of a button!!!</p>
+        <h2>CONTACT CUSTOMER SUPPORT</h2>
+        <p><b>Email us:</b>abc@parcelkargo.com</p>
+        <p><b>Call us:</b>9875469875</p>
+    </div>
+
+    <div id="rightbox">
+        <div id="left"></div>
+        <form class="login">
+            <div class="container">
+                <input type="text" placeholder="Name" name="uname" required>
+                <input type="text" placeholder="Email-ID" name="uname" required>
+                <input type="text" placeholder="Phone" name="uname" required>
+                <select name="type">
+                    <option>Select</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Shipment">Shipment status</option>
+                    <option value="Payment">Payment issue</option>
+                    <option value="Work">Work with us</option>
+                </select>
+                <textarea placeholder="Address"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
